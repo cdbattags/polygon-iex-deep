@@ -2,7 +2,7 @@
 
 ```
 USAGE:
-cargo run <INPUT> <SYMBOL> <TIME>
+./bin/main run <INPUT> <SYMBOL> <TIME>
 ```
 
 INPUT: 
@@ -137,7 +137,7 @@ I believe Polygon does not offer book data for stocks but for crypto:
 - candles/bars
 - snapshot book real-time
 
-![polygon-crypto](../polygon-pcp-book/images/polygon-book-data.png)
+![polygon-crypto](./images/polygon-book-data.png)
 
 TOPS is the max bid and lowest ask at a given timetamp and looks like it's atomic based on price level action. Meanwhile Polygon's lowest time window is 1 minute for crypto.
 
