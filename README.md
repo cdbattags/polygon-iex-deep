@@ -25,14 +25,16 @@ Expand from `.gz` to `.pcap` file in order to use with this tool.
 
 ## Example (only cmpiled for macOS currently)
 
+> _*HEADS UP:*_ The filename must be the exact same format as what comes from IEX: `data_feeds_20210712_20210712_IEXTP1_DEEP1.0.pcap`
+
 ```bash
-$ ./bin/main ./data/20210712_IEXTP1_DEEP1.0.pcap NET 9:31:7.398847
+$ ./bin/main ./data/data_feeds_20210712_20210712_IEXTP1_DEEP1.0.pcap NET 9:31:7.398847
 ```
 
 ## To Build & Run
 
 ```bash
-$ cargo run ./data/20210712_IEXTP1_DEEP1.0.pcap NET 9:31:7.398847
+$ cargo run ./data/data_feeds_20210712_20210712_IEXTP1_DEEP1.0.pcap NET 9:31:7.398847
 ```
 
 Optionally, you may add ENVS for debug logging such as `RUST_LOG=info RUST_BACKTRACE=1`.
