@@ -23,7 +23,7 @@ I personally used:
 
 Expand from `.gz` to `.pcap` file in order to use with this tool.
 
-## Example (only cmpiled for macOS currently)
+## Example (only compiled for macOS currently)
 
 > _*HEADS UP:*_ The filename must be the exact same format as what comes from IEX: `data_feeds_20210712_20210712_IEXTP1_DEEP1.0.pcap`
 
