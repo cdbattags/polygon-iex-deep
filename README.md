@@ -53,6 +53,22 @@ Two deliverables here?
 
 ## Reference Documentation/Schemas
 
+[IEX Transport Specification.pdf](https://iextrading.com/docs/IEX%20Transport%20Specification.pdf)
+
+See page 5 of 15.
+
+field, offset, length, type, description
+Version, 0, 1, Byte, 1 (0x1) Version of Transport specification
+(Reserved), 1, 1, N/A, Reserved byte
+Message Protocol ID, 2, 2, Short, Unique identifier of the higher-layer protocol
+Channel ID, 4, 4, Integer, Identifies the stream of bytes/sequenced messages
+Session ID, 8, 4, Integer, Identifies the session
+Payload Length, 12, 2, Short, Byte length of the payload
+Message Count, 14, 2, Short, Number of messages in the payload
+Stream Offset, 16, 8, Long, Byte offset of the data stream
+First Message Sequence Number, 24, 8, Long, Sequence of the first message in the segment
+Send Time, 32, 8, Timestamp, Send time of segment
+
 [IEX DEEP Specification.pdf](https://iextrading.com/docs/IEX%20DEEP%20Specification.pdf)
 
 See page 35 of 44.
